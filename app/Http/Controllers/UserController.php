@@ -39,7 +39,8 @@ class UserController extends Controller
     public function logout()
     {
     Auth::logout();
-    return redirect()->route('user.signin')->with('flash_message', 'またね！');
+    return redirect()->route('user.signin');
+    #->with('flash_message', 'またね！');
     }
 
    /**
