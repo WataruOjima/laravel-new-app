@@ -34,6 +34,6 @@ class AppServiceProvider extends ServiceProvider
             \URL::forceScheme('https');
         }
         // 管理者のID番号を51とする
-        config(['admin_id' => 51]);
+        config(['admin_id' => 1]);
     }
 }
