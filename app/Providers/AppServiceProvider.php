@@ -3,7 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Schema; 
+use Illuminate\Support\Facades\Schema;
+#use Illuminate\Routing\UrlGenerator;
 use DB;
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,6 +25,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        #$url->forceScheme('https');
         // 本番環境以外だった場合、SQLログを出力する
         #if (config('app.env') !== 'production') {
            # DB::listen(function ($query) {
