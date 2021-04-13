@@ -4,8 +4,6 @@
 <meta charset="UTF-8">
 <title>@yield('title')｜biboroku-matome </title>
 
-<link rel="icon" href="http://www.mark-sign.net/download02/data0171/instagram.png">
-
 <meta name="description" itemprop="description" content="@yield('description')">
 <meta name="keywords" itemprop="keywords" content="@yield('keywords')">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">

@@ -17,7 +17,9 @@ class PostsController extends Controller
      */
     public function index(Request $request)
     {
+        #$searchword = $request->searchword;
         $searchword = $request->searchword;
+        #dd($searchword);
 
         $posts = Post::with(['comments', 'category']) # クエリーの調整
             ->orderBy('created_at', 'desc')
