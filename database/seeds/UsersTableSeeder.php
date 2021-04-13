@@ -25,6 +25,7 @@ class UsersTableSeeder extends Seeder
                 'password'  => Hash::make('password'),
                 'admin_flg' => false,
             ],
+
         ];
 
         foreach ($users as $user) {

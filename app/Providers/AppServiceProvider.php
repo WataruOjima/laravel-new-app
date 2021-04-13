@@ -37,6 +37,6 @@ class AppServiceProvider extends ServiceProvider
         }
 
         // 管理者のID番号を1とする
-        config(['admin_id' => 0]);
+        //config(['admin_id' => 1]);
     }
 }
