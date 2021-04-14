@@ -21,7 +21,7 @@ class PostsController extends Controller
         $searchword = $request->searchword;
         #dd($searchword);
 
-        $posts = Post::with(['comments', 'category']) # クエリーの調整
+        $posts = Post::with(['comments', 'category']) # クエリーの調整 N+1 問題解消
             ->orderBy('created_at', 'desc')
             ->fuzzyNameMessage($searchword)
             ->paginate(10); 

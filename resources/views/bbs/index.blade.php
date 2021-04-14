@@ -86,7 +86,7 @@
                             <form method="POST" action="{{ action('PostsController@destroy', $post->id) }}">
                                 @csrf
                                 @method('DELETE')
-                                <button class="btn btn-danger btn-sm">削除</button>
+                                <input type="submit" class="btn btn-danger btn-sm" value="削除" onclick='return confirm("本当に削除してよろしいですか？");'>
                             </form>
                         </p>
                     @endcan
