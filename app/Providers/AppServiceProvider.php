@@ -32,11 +32,15 @@ class AppServiceProvider extends ServiceProvider
                 #\Log::info("Query Time:{$query->time}s] $query->sql");
             #});
           // 本番環境(Heroku)でhttpsを強制する
-        if (\App::environment('production')) {
-            \URL::forceScheme('https');
+        //if (\App::environment('production')) {
+           // \URL::forceScheme('https');
+       // }
+       
+        if ($this->app->environment() == 'production') {
+            URL::forceSchema('https');
         }
 
         // 管理者のID番号を1とする
-        //config(['admin_id' => 1]);
+        config(['admin_id' => 1]);
     }
 }
