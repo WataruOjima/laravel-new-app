@@ -74,6 +74,5 @@ class User extends Authenticatable
         $id = ($id) ? $id : $this->id;
         return $id == config('admin_id');
     }
-
-
+    
 }
