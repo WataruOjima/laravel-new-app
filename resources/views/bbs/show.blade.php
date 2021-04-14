@@ -113,4 +113,3 @@
 </div>
 @endsection
 @include('layouts.bbsfooter')
-
