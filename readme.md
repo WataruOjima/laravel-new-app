@@ -1,76 +1,118 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+<img width="1322" alt="スクリーンショット 2021-04-16 0 03 07" src="https://user-images.githubusercontent.com/75024186/114891786-25dc6700-9e47-11eb-876d-cff775abdf31.png">
 
-## About Laravel
+#  Biborokuまとめ x コミュニケーション
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+みんなが "シェアしたい" 画像を自由にシェアできる
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+< 画像投稿コミュニケーションサービス >
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 概要
+恋人、友人と遠く離れていても、シェアした画像でつながる
 
-## Learning Laravel
+いつでも、どこでも、言葉では伝えきれない思いを気軽に画像で伝え、共有することの大切さ
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 本番環境
+https://biboroku-matome-communication.com/
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### テストアカウント
 
-## Laravel Sponsors
+email: admin@example.com
+password: password
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+email: test0001@example.com
+password: password
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
+### DEMO
+https://gyazo.com/3fa6614f76a405e954fe3bfe1b7cad42
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 使い方
 
-## Security Vulnerabilities
+1. 「新規登録」ページに遷移をしてユーザー登録をします。
+2. 右上「投稿」ボタン、もしくは、「投稿の新規作成」ボタンで投稿ページ遷移、投稿フォームが表示され、各欄を記入と画像の添付をして投稿をします。
+3. ホーム（メインページ）の検索窓から検索したいワードを入力すると、検索ができます。
+4. ホーム（メインページ）の処理、「詳細」「編集」「削除」ボタンがあります。
+5. 自分の投稿のみ「編集」「削除」ができます。
+6. 気になった投稿の「詳細」ボタンをクリックすることで、投稿詳細ページへ遷移することができます。
+7.  投稿詳細ページ、下にコメント欄があります。自由にコメントを残せます。
+8. 画面右上のアカウントのプルダウンから「アカウントの変更」を押すことで、名前、アドレス、パスワードが変更可能
+9. 画面右上のアカウントのプルダウンから「ログアウト」を押すことで、いつでもログアウトができます。
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+## 洗い出した要件
+* ユーザー登録
+* 投稿投稿機能
+* 部分検索機能
+* コメント機能
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# mylaravelapp
-# mylaravelapp
-# laravel-new-app-
-# laravel-new-app
+## 実装した機能についてのGIFと説明
+* ユーザーのログイン機能とメインページの紹介
+https://gyazo.com/eaa331192d106671e9b0f4526b87a110
+
+* 画像投稿機能の実装
+https://gyazo.com/2441761b4a0189a98e036d2485c6834f
+
+* コメント機能の実装、コメント数の表示
+https://gyazo.com/02c9fa89aef41f7bac684d08b8a40451
+
+
+## 工夫したポイント
+* 画像投稿：S3へ格納する前にリサイズを行い、サーバーに負荷をかけない工夫
+* 削除ボタンを押すと、onClickを設定し、ワンクッションありYes,Noで選べること
+* AWSでは、独自のドメインを取得、オートスケーリング、ElastiCache(Redis)作成、踏み台サーバ構築、ロードバランサーを作成、webサーバー2台/privateサブネット作成した点
+
+## 課題と実装予定の機能
+* 動画投稿機能（現在、写真投稿のみ）
+* ユーザーページの作成（プロフィールなど）
+* AWSへ自動デプロイの設定
+
+
+## データベース設計
+<img width="496" alt="スクリーンショット 2021-04-16 0 00 41" src="https://user-images.githubusercontent.com/75024186/114891517-eada3380-9e46-11eb-9e5c-d6ede02c433e.png">
+
+
+# テーブル設計
+
+## users テーブル
+| Column           | Type      | Options       |
+| ---------------- | --------- | ------------- |
+| id               | bigint    | null: false   |
+| name             | string    | null: false   |
+| email            | string    | null: false   |
+| password         | string    | null: false   |
+| admin_fig        | boolean   | default(false)|
+| update_at        | timestamp |               |
+| create_at        | timestamp |               |
+
+### Association
+- has_many: posts
+- has_many: comments
+
+## posts テーブル
+| Column    | Type          | Options     |
+| --------- | ------------- | ----------- |
+| id        | bigint        | null: false |
+| user_id   | reference     | null: false |
+| name      | string        | null: false |
+| message   | text          | null: false |
+| update_at | timestamp     |             |
+| create_at | timestamp     |             |
+
+
+### Association
+- belongs_to: user
+- has_many: comments
+
+## comments テーブル
+| Column    | Type      | Options     |
+| --------- | --------- | ----------- |
+| id        | bigint    | null: false |
+| post_id   | integer   | null: false |
+| user_id   | foreign   | null: false |
+| name      | string    | null: false |
+| comment   | text      | null: false |
+
+### Association
+- belongs_to: post
+- belongs_to: user
