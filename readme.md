@@ -13,7 +13,8 @@
 いつでも、どこでも、言葉では伝えきれない思いを気軽に画像で伝え、共有することの大切さ
 
 ## 本番環境
-https://biboroku-matome-communication.com/
+https://biboroku-matome-communication.com/ (deleted)
+https://gyazo.com/422688c3dc3fe576a75e7f614a190cda
 
 ### テストアカウント
 
